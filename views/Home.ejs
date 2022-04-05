@@ -1,0 +1,36 @@
+<%- include(`partials/header.ejs`)  %>
+<body>
+
+  <div class="container">
+    <br>
+    <hr>
+    <h1>Sua Biblioteca</h1>
+    <hr>
+    <a class="position-absolute btn btn-primary" href="/books/book">Criar Livro 📚</a>
+    <br>
+    <% books.forEach(book => { %>
+
+      <br>
+      <div class="card text-white bg-dark mb-3" style="width: 40rem">
+        <!-- <img id="card_image" class="card-img-top" src="..." alt="Card image cap"> -->
+        <div class="card-body">
+          <h5 class="card-title"><%= book.name %></h5>
+          <p class="card-text"><%= book.description %></p>
+          <p class="card-text" style="font-weight: 500;"><%= book.author %></p>
+          
+          
+  
+          <a href="/books/replyAva/<%= book.id %>" class="btn btn-info">Avaliar Livro 📚</a>
+          <!-- <a href="/books/replyAva/<%= book.id %>" style="margin-left: 18.5rem;" class="btn btn-danger">Deletar Livro 😥</a> -->
+        </div>
+      </div>
+    <br>
+
+    
+  
+    <% }) %>
+    
+  </div>
+</body>
+<%- include(`partials/footer.ejs`)  %>
+</html>

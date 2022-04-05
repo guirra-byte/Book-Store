@@ -1,0 +1,43 @@
+<%- include(`partials/header.ejs`) %>
+
+<body>
+
+  <div class="container">
+    <br>
+    <a class="btn btn-warning" href="/books">Home 🏠</a>
+    <br>
+    <br>
+    <h1><%= bookProps.name %></h1>
+    <hr>
+    <p><%= bookProps.description %></p>
+    <hr>
+    <span class="badge badge-warning" style="font-weight: 500;"><%= bookProps.author %></span>
+    <!-- <p><%= bookProps.author %></p> -->
+    <hr>
+   
+    <form method="POST" action="/books/bookAva">
+      <label>Resposta</label>
+      <textarea name="reply" placeholder="Digite sua Resposta" class="form-control"></textarea><br>
+      <input type="hidden" name="avaliationId" value="<%= bookProps.id %>"> 
+      <button type="submit" class="btn btn-info" >Avaliar Livro 🤔</button>
+    </form>
+    <hr>
+    <h3>Avaliações</h3>
+    <% bookAva.forEach((avaliations) =>{ %>
+
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-body">
+          <br>
+          <%= avaliations.corpo %>
+        </div>
+      </div>
+      <br>
+
+      <% }) %>
+  </div> 
+
+
+
+</body>
+<%- include(`partials/footer.ejs`) %>
+</html>

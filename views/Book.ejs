@@ -1,0 +1,46 @@
+<%- include(`partials/header.ejs`)  %>
+<body>
+
+  <div class="container" id="form-ask">
+    <a class="btn btn-warning" href="/books">Home 🏠</a>
+    <br>
+    <br>
+    <div class="card">
+      <div class="card-header">
+        <h3>Criar Livro</h3>
+        
+      </div>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Minha santa guacamole 🥗🥙!</strong> Você tem que preencher todos os campos para criar um livro
+        
+        </button>
+      </div>
+      <div class="card-body">
+        <form method="POST" action="/books/createBook">
+          <br><label>Título</label>
+          <input name="name" type="text" placeholder="Nome do Livro" class="form-control">
+          <br><label>Descrição</label>
+          <textarea name="description" placeholder="Descreva um pouco do livro aqui" class="form-control"></textarea>
+          <br><label>Autor</label>
+          <input name="author" type="text" placeholder="Nome do autor do Livro" class="form-control">
+          <br>
+          <!-- <label>Selecione uma imagem</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Upload</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="inputGroupFile01">
+              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            </div>
+          </div> -->
+          <br>
+          <button class="btn btn-info">Criar Livro 😎</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <%- include(`partials/footer.ejs`)  %>
+</body>
+</html>
