@@ -29,5 +29,6 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-8338ec?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 
