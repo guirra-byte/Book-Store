@@ -22,6 +22,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Cadastro de Usuário
 - [ ] Validação de Usuário
 - [ ] Deletar Usuário
+- [ ] Migrar de ORM, Sequelize para Prisma
 
 ## Feito Com: ⚒
 ![Node.Js](https://img.shields.io/badge/Node.js-52b788?style=for-the-badge&logo=node.js&logoColor=white)
